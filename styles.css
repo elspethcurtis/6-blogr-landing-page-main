@@ -1,5 +1,8 @@
 body{
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header {
@@ -72,17 +75,51 @@ ul{
 
 .section-2{
     justify-content: center;
-    width: 100%;
+    width: 75%;
 }
 
 .section-2 h2{
     text-align: center;
 }
 
-.columns-1{
+.columns-1, 
+.columns-2{
     columns: 2 auto;    
 }
 
 .section-2-img{
     height:700px;
+}
+
+.section-3 {
+    display: flex;
+    align-items: center;
+    background-image: url(images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: -50% 50%;
+    height: 400px;
+    width: 100%;
+    background-color: darkslateblue;
+}
+
+.section-4 {
+    margin-top: 50px;
+}
+
+.section-4 img{
+    height: 700px;
+}
+
+.columns-2-div-1 {
+    padding-top: 150px;
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: black;
+    border-radius: 0px 30px 0 0;
 }
