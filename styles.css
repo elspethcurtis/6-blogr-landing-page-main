@@ -8,6 +8,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Lexend', sans-serif;
 }
 
 header {
@@ -34,6 +35,16 @@ ul{
     }
 }
 
+@media only screen and (min-width:800px){
+    .logo-mbl{
+        display: none;
+    }
+}
+
+.header-right{
+    margin-top:10px;
+}
+
 .header-right button, 
 .header-right a {
     padding: 10px 20px;
@@ -55,6 +66,7 @@ ul{
 .company-header,
 .connect-header {
     color:white;
+    cursor:pointer;
 }
 
 .product, 
@@ -104,6 +116,40 @@ ul{
     color: white;
 }
 
+button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.start-btn {
+    background: white;
+    color: pink;
+    transition: .3s;
+    border:1px solid white;
+}
+
+.start-btn:hover{
+    background:pink;
+    color:white;
+    border:white 1px solid;
+}
+
+.learn-btn{
+    background: pink;
+    color:white;
+    border: 1px white solid;
+    transition: .3s;
+}
+
+.learn-btn:hover{
+    background:white;
+    color:pink;
+    border:1 px white solid;
+}
+
 .columns-1{
     display: flex;
     flex-wrap: wrap;
@@ -136,10 +182,10 @@ ul{
         background-image: url(images/illustration-editor-desktop.svg);
         height: 450px;
         background-repeat: no-repeat;
-        background-position: 115% 50%;
+        background-position: 135% 50%;
         background-size: contain;
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
 
     .section-2-mbl-img {
@@ -147,7 +193,7 @@ ul{
     }
 
     .columns-1 {
-        width: 40%;
+        width: 50%;
         margin-left: 10%;
     }
 
@@ -156,6 +202,12 @@ ul{
         flex-wrap: wrap;
         justify-content: left;
         text-align: left;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .section-2{
+        background-position: 115% 50%;
     }
 }
 
@@ -185,7 +237,13 @@ ul{
     color: white;
 }
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width:550px){
+    .section-3{
+        height:675px;
+    }
+}
+
+@media only screen and (min-width:800px){
     .section-3 {
         display: flex;
         align-items: center;
@@ -229,22 +287,21 @@ ul{
 
 @media only screen and (min-width:800px) {
     .section-4 {
-        margin-top: 50px;
+        margin-top: 150px;
         width:100%;
         background-image: url(images/illustration-laptop-desktop.svg);
         height: 450px;
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: -25% 50%;
+        background-position: -45% 50%;
         display: flex;
         justify-content: flex-end;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
 
     .columns-2{
-        width:40%;
-        margin-right: 50px;
+        width:50%;
+        margin-right: 100px;
     }
 
     .section-4 img{
@@ -261,6 +318,13 @@ ul{
 
     .section-4 div{
         text-align:left;
+        margin-left:110px;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .section-4{
+        background-position: -5% 50%;
     }
 }
 
@@ -272,6 +336,45 @@ footer{
     color: white;
     background: black;
     border-radius: 0px 30px 0 0;
+    flex-wrap: wrap;
+}
+
+footer a{
+    margin-top:50px;
+    margin-right:25px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+footer ul{
+    width:100%;
+    text-align:center;
+}
+
+footer h4{
+    font-size:18px;
+}
+
+@media only screen and (min-width:800px){
+    footer{
+        flex-wrap:nowrap;
+    }
+
+    footer a{
+        display:block;
+        margin-left:55px;
+    }
+}
+
+.logo-mbl{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.logo{
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 .ham {
@@ -279,11 +382,11 @@ footer{
     z-index: 100;
     top: 1rem;
     right: 1rem;
-    width: 1rem;
-    height: 1rem;
-    border:none;
+    width: 50px;
+    height: 50px;
     background:pink;
     cursor: pointer;
+    color:white;
   }
 
   @media only screen and (min-width:800px) {
