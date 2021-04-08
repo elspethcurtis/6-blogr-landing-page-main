@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | [Blogr]</title>
@@ -12,6 +13,19 @@
 </head>
 <body>
   <section class="section-1">
+
+   <button class="ham">
+    <span class="fas fa-bars menu-icon"></span>
+    <span class="fas fa-times x-icon"></span>
+   </button>   
+
+      <ul class="menu">
+        <li><a class="menuLink" href="#">Product</a></li>
+        <li><a class="menuLink" href="#">Overview</a></li>
+        <li><a class="menuLink" href="#">Connect</a></li>
+        <li><a class="menuLink" href="#">Login</a></li>
+        <li><a class="menuLink" href="#">Sign Up</a></li>
+      </ul>
     <header>
       <div class="header-left">
         <ul class="product-header">Product
@@ -53,7 +67,7 @@
       
     <h2>Designed for the future</h2>
 <div class="columns-1">
-
+  <img src="images/illustration-editor-mobile.svg" class = "section-2-mbl-img">
   <div>
     <h3>Introducing an extensible editor</h3>
     <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
@@ -79,7 +93,7 @@
 
 <section class="section-4">
   <div class="columns-2">
-
+    <img src="images/illustration-laptop-mobile.svg" class="section-4-mbl-img">
   <div class="columns-2-div-1">
     <h3>Free, open, simple</h3>
     <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
