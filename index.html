@@ -8,24 +8,26 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | [Blogr]</title>
 
 </head>
 <body>
   <section class="section-1">
-   <button class="ham">
-    <span class="fas fa-bars menu-icon"></span>
-    <span class="fas fa-times x-icon"></span>
-   </button>   
+    <!-- START HAMBURGER MENU -->
+    <!-- BUTTON FOR HAMBURGER MENU -->
+    <button class="ham">
+      <span class="fas fa-bars menu-icon"></span>
+      <span class="fas fa-times x-icon"></span>
+    </button>   
+    <!-- MODAL FOR HAMBURGER MENU -->
+    <div class="menu">    
 
-      <div class="menu">
-        
         <div class="mbl-nav-item">
           <div class="mbl-nav-item-btn">
             <button class="mbl-product-header">Product</button> 
-            <i class="mbl-product-chevron-down mbl-chevron fas fa-chevron-down"></i><i class="mbl-product-chevron-up chevron mbl-chevron fas fa-chevron-up"></i>
+            <i class="mbl-product-chevron-down mbl-chevron fas fa-chevron-down"></i><i class="mbl-product-chevron-up mbl-chevron fas fa-chevron-up"></i>
           </div>
           <ul class="mbl-nav-list-product">
             <li class="mbl-product">Overview</li>
@@ -39,7 +41,7 @@
         <div class="mbl-nav-item">
           <div class="mbl-nav-item-btn">
             <button class="mbl-company-header">Company</button> 
-            <i class="mbl-company-chevron-down mbl-chevron fas fa-chevron-down"></i><i class="mbl-company-chevron-up chevron mbl-chevron fas fa-chevron-up"></i>
+            <i class="mbl-company-chevron-down mbl-chevron fas fa-chevron-down"></i><i class="mbl-company-chevron-up mbl-chevron fas fa-chevron-up"></i>
           </div>
           <ul class="mbl-nav-list-company">
             <li >About</li>
@@ -52,7 +54,7 @@
         <div class="mbl-nav-item">
           <div class="mbl-nav-item-btn">
             <button class="mbl-connect-header">Company</button> 
-            <i class="mbl-connect-chevron-down mbl-chevron fas fa-chevron-down"></i><i class="mbl-connect-chevron-up chevron mbl-chevron fas fa-chevron-up"></i>
+            <i class="mbl-connect-chevron-down mbl-chevron fas fa-chevron-down"></i><i class=" mbl-connect-chevron-up mbl-chevron fas fa-chevron-up"></i>
           </div>
           <ul class="mbl-nav-list-connect">
             <li >Contact</li>
@@ -69,54 +71,62 @@
 
         
       </div>
-    <header>
-      <a href="#" class="logo-mbl"><img src="images/logo.svg"></a>
-      <div class="header-left">
-        <a href="#"><img class="logo" src="images/logo.svg"></a>
-        <div class="nav-item">
-          <div class="nav-item-btn">
-            <button class="product-header">Product</button> 
-            <i class="product-chevron-down fas chevron fa-chevron-down"></i><i class="product-chevron-up chevron chevron-up-shown fas fa-chevron-up"></i>
+      <!-- END MODAL/HAMBURGER MENU -->
+   
+      <!-- DESKTOP NAVIGATION -->
+      <header>
+        <a href="#" class="logo-mbl"><img src="images/logo.svg"></a>
+        <!-- LEFT NAVIGATION -->
+          <div class="header-left">
+            <a href="#"><img class="logo" src="images/logo.svg"></a>
+          <div class="nav-item">
+            <div class="nav-item-btn">
+              <button class="product-header">Product</button> 
+              <i class="product-chevron-down fas chevron fa-chevron-down"></i><i class="product-chevron-up chevron chevron-up-shown fas fa-chevron-up"></i>
+            </div>
+            <div class="nav-list product">
+              <a class="product">Overview</a>
+              <a class="product">Pricing</a>
+              <a class="product">Marketplace</a>
+              <a class="product">Features</a>
+              <a class="product">Integrations</a>
+            </div>
           </div>
-          <div class="nav-list product">
-            <a class="product">Overview</a>
-            <a class="product">Pricing</a>
-            <a class="product">Marketplace</a>
-            <a class="product">Features</a>
-            <a class="product">Integrations</a>
+          <div class="nav-item">
+            <div class="nav-item-btn">
+              <button class="company-header">Company</button> 
+              <i class="chevron company-chevron-down fas fa-chevron-down"></i><i class="chevron company-chevron-up chevron-up-shown fas fa-chevron-up"></i>
+            </div>
+            <div class="nav-list company">
+              <a class="company">About</a>
+              <a class="company">Team</a>
+              <a class="company">Blog</a>
+              <a class="company">Careers</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <div class="nav-item-btn">
+            <button class="connect-header">Connect</button> 
+            <i class="chevron connect-chevron-down fas fa-chevron-down"></i><i class="chevron connect-chevron-up chevron-up-shown fas fa-chevron-up"></i>
+            </div>
+            <div class="nav-list connect">
+              <a class="connect">Contact</a>
+              <a class="connect">Newsletter</a>
+              <a class="connect">LinkedIn</a>
+            </div>
           </div>
         </div>
-        <div class="nav-item">
-          <div class="nav-item-btn">
-            <button class="company-header">Company</button> 
-            <i class="chevron company-chevron-down fas fa-chevron-down"></i><i class="chevron company-chevron-up chevron-up-shown fas fa-chevron-up"></i>
-          </div>
-          <div class="nav-list company">
-            <a class="company">About</a>
-            <a class="company">Team</a>
-            <a class="company">Blog</a>
-            <a class="company">Careers</a>
-          </div>
-        </div>
-        <div class="nav-item">
-          <div class="nav-item-btn">
-          <button class="connect-header">Connect</button> 
-          <i class="chevron connect-chevron-down fas fa-chevron-down"></i><i class="chevron connect-chevron-up chevron-up-shown fas fa-chevron-up"></i>
-          </div>
-          <div class="nav-list connect">
-            <a class="connect">Contact</a>
-            <a class="connect">Newsletter</a>
-            <a class="connect">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="header-right">
-        <a>Login</a>
-        <button>Sign Up</button>
-      </div>
+        <!-- END LEFT NAVIGATION -->
+        <!-- START RIGHT NAVIGATION -->
+       <div class="header-right">
+          <a>Login</a>
+          <button>Sign Up</button>
+       </div>
+       <!-- END RIGHT NAVIGATION -->
       </header>
+      <!-- END DESKTOP NAVIGATION -->
 
+      <!-- START HEADER CTA -->
       <div class="header-cta">
         <h1>A modern publishing platform</h1>
         <p>Grow your audience and build your online brand</p>
@@ -124,75 +134,88 @@
         <button class="start-btn">Start for Free</button>
         <button class="learn-btn">Learn More</button>
       </div>
+      <!-- END HEADER CTA -->
+      </section>
+      <!-- END HEADER SECTION -->
+
+      <!-- START SECTION 2 -->
+      <section class="section-2">
+      
+        <h2>Designed for the future</h2>
+          <div class="columns-1">
+            <img src="images/illustration-editor-mobile.svg" class = "section-2-mbl-img">
+            <div>
+              <h3>Introducing an extensible editor</h3>
+              <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                  change the looks of a blog.</p>
+            </div>
+            <div>
+              <h3>Robust content management</h3>
+              <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+            </div>
+          </div>
+      </section>
+      <!-- END SECTION 2 -->
+
+      <!-- START SECTION 3 -->
+      <section class="section-3">
+        <img src="images/illustration-phones.svg">
+        <div class="section-3-div">
+          <h2>State of the Art Infrastructure</h2>
+          <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+              This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
       </section>
 
-  <section class="section-2">
-      
-    <h2>Designed for the future</h2>
-<div class="columns-1">
-  <img src="images/illustration-editor-mobile.svg" class = "section-2-mbl-img">
-  <div>
-    <h3>Introducing an extensible editor</h3>
-    <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-      The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-      videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-      change the looks of a blog.</p>
-</div>
-<div>
-    <h3>Robust content management</h3>
-    <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-      by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
-</div>
-</div>
-  </section>
-  <section class="section-3">
-    <img src="images/illustration-phones.svg">
-    <div class="section-3-div">
-      <h2>State of the Art Infrastructure</h2>
-      <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-      This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-      </div>
-</section>
+      <!-- END SECTION 3 -->
 
-<section class="section-4">
-  <div class="columns-2">
-    <img src="images/illustration-laptop-mobile.svg" class="section-4-mbl-img">
-  <div class="columns-2-div-1">
-    <h3>Free, open, simple</h3>
-    <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-</div>
+      <!-- START SECTION 4 -->
 
-<div>
-    <h3>Powerful tooling</h3>
-    <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-    capable of producing even the most complicated sites.</p>
-</div>
-</div>
-  </section>
-<footer>
+      <section class="section-4">
+        <div class="columns-2">
+          <img src="images/illustration-laptop-mobile.svg" class="section-4-mbl-img">
+          <div class="columns-2-div-1">
+            <h3>Free, open, simple</h3>
+            <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+                features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+                and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          </div>
+          <div>
+            <h3>Powerful tooling</h3>
+            <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.</p>
+          </div>
+        </div>
+      </section>
+      <!-- END SECTION 4 -->
+      <!-- START FOOTER -->
 
-  <a><img src="images/logo.svg"></a>
-    <ul><h4>Product</h4>
-    <li>Overview</li>
-    <li>Pricing</li>
-    <li>Marketplace</li>
-    <li>Features</li>
-    <li>Integrations</li>
-</ul>
-    <ul><h4>Company</h4>
-    <li>About</li>
-    <li>Team</li>
-    <li>Blog</li>
-    <li>Careers</li>
-</ul>
-    <ul><h4>Connect</h4>
-    <li>Contact</li>
-    <li>Newsletter</li>
-    <li>LinkedIn</li>
-    </ul>
-  </footer>
+      <footer>
+        <a><img src="images/logo.svg"></a>
+          <ul><h4>Product</h4>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+          <ul><h4>Company</h4>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+          <ul><h4>Connect</h4>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+      </footer>
+
+      <!-- END FOOTER -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
