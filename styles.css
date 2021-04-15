@@ -272,7 +272,7 @@ hr{
     background-image: 
         linear-gradient(to right, rgba(255, 143, 112, .9), rgba(255, 61, 84, .9)),
                 url('images/bg-pattern-intro.svg');
-    height: 500px;
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -282,6 +282,12 @@ hr{
     align-content:baseline;
     border-radius: 0 0 0 75px;
     width:100%;
+}
+
+@media only screen and (min-width:800px){
+    .section-1 {
+        height:500px;
+    }
 }
 
 .header-cta {
